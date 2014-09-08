@@ -11,7 +11,9 @@ INSTALLATION
 ------------
 
 1)Создать базу *guestbook*
+
 2)Настроить *config/db.php*
+
 3)Запустить миграцию *yii migrate*
 
 
