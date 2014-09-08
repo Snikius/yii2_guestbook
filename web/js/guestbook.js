@@ -16,6 +16,7 @@ var guestbook=(function() {
         $(fieldClass+" .help-block").text("");
         $(fieldClass+" input").val("");
         $(fieldClass+" textarea").val("");
+        $.pjax.reload({container:'#pjaxwidget'});
     };
     
     var setError=function(message,attribute) {
@@ -42,6 +43,7 @@ var guestbook=(function() {
     
     var showSendedMessage=function() {
         $(".jsGuestbookMessage").removeClass("hidden");
+        $(".jsForm").hide(500);
     };
     
     var hideSendedMessage=function() {
